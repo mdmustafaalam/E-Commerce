@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./css/styles.css?v=5" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet File -->
+    <link href="./css/style.css?v=1" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <title>E-Commerce</title>
+</head>
+
+<body id="body">
+    <button type="button" class="mobile-nav-toggle" onclick="toggleMobileNav()"><i class="fa fa-bars"></i></button>
+    <main id="main">
+
+        <header id="header" class="header-cng">
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <h1>
+                        <a href="./"><img src="img/logo.png" alt="" title="" /></a>
+                        <a href="./">NProduct</a>
+                    </h1>
+                </div>
+
+                <nav id="nav-menu-container" class="navbar">
+                    <ul class="nav-menu menu-size">
+                        <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+                        <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+                        <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+                        <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+                        <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="mobile-nav-menu-container" class="mobile-navbar navbar">
+                    <ul class="nav-menu nav-items">
+                        <div id="logo" class="pull-left">
+                            <h1 class="modalH justify-content-start">
+                                <a href="./">NProduct</a>
+                            </h1>
+                        </div>
+                        <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+                        <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+                        <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+                        <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+                        <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+                        <li class="lg"><a href="#!">Login</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="nav-menu-container" class="navbar">
+                    <ul class="nav-menu">
+                        <li class="button-cng mr-2" data-toggle="modal" data-target="#exampleModal"><a href="#!"><i
+                                    class="bi bi-search"></i></a>
+                        </li>
+                        <li class="button-cng mr-2"><a href="./wishlist.html"><i class="bi bi-heart"></i></i></a>
+                        </li>
+                        <li class="button-cng mr-2"><a href="./cartAdd.html"><i class="bi bi-cart-check"></i></a>
+                        </li>
+                        <li class="dropdown button-cng"><a href="#!"><i class="bi bi-emoji-smile"></i></a>
+                    </ul>
+                </nav>
+                <!-- #nav-menu-container -->
+            </div>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search Here</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="form-group col-12 pl-2">
+                                <label for="search">Search for Product & Brands</label>
+                                <input type="search" class="form-control" id="search" name="search"
+                                    placeholder="Search Here" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-search"><a href="#!">Search</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5 productCarousels">
+            <div class="row product-row mb-5">
+                <!-- Left Section: Product Images -->
+                <div class="col-md-6">
+                    <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/items/item1.jpg" class="d-block w-100" alt="Product Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/items/item2.jpg" class="d-block w-100" alt="Product Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/items/item3.jpg" class="d-block w-100" alt="Product Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                            data-bs-slide="prev">
+                            <a href="#!"><a href="#!"><i class="bi bi-heart"></i></i></a></a>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                            data-bs-slide="next">
+                            <a href="#!"><a href="#!"><i class="bi bi-heart"></i></i></a></a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Right Section: Product Details -->
+                <div class="col-md-6">
+                    <h5 class="product-title">Soundcore by Anker Motion Q 16 W Bluetooth Speaker (Black, Stereo Channel)
+                    </h5>
+                    <p class="mb-1"><strong> Seller: </strong> MPDSLERetail <span class="badge bg-info text-white">
+                            Assured</span></p>
+                    <div class="d-flex align-items-center">
+                        <div class="price-hotel">
+                            ₹ 598<span class="discount">81% off</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h5 class="product-title m-0">Available Offers</h5>
+                        <ul class="pl-3">
+                            <li><strong>Partner Offer:</strong> Buy this & get up to ₹500 off on Furniture</li>
+                            <li><strong>Bank Offer:</strong> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="#!"><span class="badge pad-cngg bg-info text-white">Add To Cart</span></a>
+                        <a href="#!"><span class="badge pad-cngg bg-info text-white">Buy Now</span></a>
+                    </div>
+
+                    <!-- Pincode Check -->
+                    <div class="mt-4">
+                        <h3 class="product-order">Delivery by 17 Oct, Thursday</h3>
+                        <div class="input-group pin-check">
+                            <input type="text" class="form-control" placeholder="Enter Pincode" id="pincodeInput">
+                            <button class="btn btn-outline-secondary" type="button" onclick="checkPincode()">Check
+                                Pincode</button>
+                        </div>
+                        <div id="pincodeResult" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row row-foot gy-4">
+                    <div class="col-lg-2 col-md-3 footer-about">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="img/logo.png" alt="" title="" />
+                            <span class="sitename">MusTafa</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>A108 Salt Lake</p>
+                            <p>West Bangal, India</p>
+                        </div>
+                        <div class="footer-contact pt-3">
+                            <p>
+                                Welcome to Mustafa – your one-stop shop for quality products. Explore a wide range of
+                                items tailored to meet your needs, with secure checkout and fast delivery.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links cng-foot">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="#!">Brands</a></li>
+                            <li><a href="./offer.html">Offers</a></li>
+                            <li><a href="./newLanch.html">New</a></li>
+                            <li><a href="#!">Splurge</a></li>
+                            <li><a href="#!">Magazine</a></li>
+                            <li><a href="./elite.html">Elite Offers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links cng-foot">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#!">Term & Condition</a></li>
+                            <li><a href="#!">Privacy Policy</a></li>
+                            <li><a href="#!">Return and Cancellation Policy</a></li>
+                            <li><a href="#!">Contact Info</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-map footer-links">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.3523126546!2d88.26495117488783!3d22.535406374621722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1725439736979!5m2!1sen!2sin"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright text-center px-3">
+            <div
+                class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <div>
+                        © Copyright <strong><span>MusTafa</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <script>
+        
+        // Pincode Checker
+        function checkPincode() {
+            const validPincodes = ['735210', '110001', '400001'];
+            const pincodeInput = document.getElementById("pincodeInput").value;
+            const result = document.getElementById("pincodeResult");
+
+            if (validPincodes.includes(pincodeInput)) {
+                result.innerHTML = "Delivery available at this pincode!";
+                result.style.color = 'green';
+            } else {
+                result.innerHTML = "Sorry, delivery is not available at this pincode.";
+                result.style.color = 'red';
+            }
+        }
+    </script>
+    
+</body>
+
+</html>

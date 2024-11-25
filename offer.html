@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="img/logo.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS File -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="./css/styles.css?v=5" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Main Stylesheet File -->
+    <link href="./css/style.css?v=1" rel="stylesheet">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <title>E-Commerce</title>
+</head>
+
+<body id="body">
+    <button type="button" class="mobile-nav-toggle" onclick="toggleMobileNav()"><i class="fa fa-bars"></i></button>
+    <main id="main">
+
+        <header id="header" class="header-cng">
+            <div class="container">
+                <div id="logo" class="pull-left">
+                    <h1>
+                        <a href="./"><img src="img/logo.png" alt="" title="" /></a>
+                        <a href="./">NProduct</a>
+                    </h1>
+                </div>
+
+                <nav id="nav-menu-container" class="navbar">
+                    <ul class="nav-menu menu-size">
+                        <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+                        <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+                        <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+                        <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+                        <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="mobile-nav-menu-container" class="mobile-navbar navbar">
+                    <ul class="nav-menu nav-items">
+                        <div id="logo" class="pull-left">
+                            <h1 class="modalH justify-content-start">
+                                <a href="./">NProduct</a>
+                            </h1>
+                        </div>
+                        <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+                        <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+                        <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+                        <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+                        <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+                        <li class="lg"><a href="#!">Login</a></li>
+                    </ul>
+                </nav>
+
+                <nav id="nav-menu-container" class="navbar">
+                    <ul class="nav-menu">
+                        <li class="button-cng mr-2" data-toggle="modal" data-target="#exampleModal"><a href="#!"><i
+                                    class="bi bi-search"></i></a>
+                        </li>
+                        <li class="button-cng mr-2"><a href="./wishlist.html"><i class="bi bi-heart"></i></i></a>
+                        </li>
+                        <li class="button-cng mr-2"><a href="./cartAdd.html"><i class="bi bi-cart-check"></i></a>
+                        </li>
+                        <li class="dropdown button-cng"><a href="#!"><i class="bi bi-emoji-smile"></i></a>
+                    </ul>
+                </nav>
+                <!-- #nav-menu-container -->
+            </div>
+        </header>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search Here</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form class="row">
+                            <div class="form-group col-12 pl-2">
+                                <label for="search">Search for Product & Brands</label>
+                                <input type="search" class="form-control" id="search" name="search"
+                                    placeholder="Search Here" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-search"><a href="#!">Search</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Intro Section -->
+        <section id="intro">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div id="intro-img" class="intro-imgs">
+                            <img src="./img/offers/p6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div><!-- #intro -->
+        </section>
+
+        <div class="blank"></div>
+        <div id="header-slider" class="header-slider">
+            <div class="container">
+                <nav id="slider-menu-container" class="slider">
+                    <div class="swiper mySwipers">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div id="cart-box" class="cart-box">
+                                    <img src="./img/sales/sale1.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div id="cart-box" class="cart-box">
+                                    <img src="./img/sales/sale2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!--featured Section -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <div class="section-container">
+                    <div class="text-view">
+                        <h2 class="m-0 mb-2">DIWALI BLOCKBUSTER</h2>
+                        <p class="m-0 p-0 view-all"><a href="./addToCart.html">View All</a></p>
+                    </div>
+                    <div class="row service-row">
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'd1',
+                                            title: 'Pond\'s Bright Beauty Anti-Spot Serum Cream with',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d1.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/diwali/d1.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Pond's Bright Beauty Anti-Spot Serum Cream with Niacinamide and
+                                                        SPF 15 PA++ |Fades Dark Spots |Boosts Glow and Enhances Skin
+                                                        Radiance | 35G
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'd1',
+                                                        title: 'Pond\'s Bright Beauty Anti-Spot Serum',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/diwali/d1.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'd2',
+                                            title: ' Aqualogica Radiance+ Dewy Sunscreen with Watermelon',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d2.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/diwali/d2.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Aqualogica Radiance+ Dewy Sunscreen with Watermelon &
+                                                        Niacinamide | SPF 50+ |PA+++ | Protects from UVA, UVB 50g
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'd2',
+                                                        title: 'Aqualogica Radiance+ Dewy Sunscreen with Watermelon',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/diwali/d2.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'd3',
+                                            title: 'Alps Goodness Fermented Rice Water (100 ml)',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d3.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/diwali/d3.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Alps Goodness Fermented Rice Water (100 ml) | Rice Water For
+                                                        Hair & Face | Korean Glass Skin | For Brighter Skin | Shiny
+                                                        Silky Hair | Elastic & Glowy Skin
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'd3',
+                                                        title: 'Alps Goodness Fermented Rice Water (100 ml)',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/diwali/d3.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            d: 'd4',
+                                            title: 'NY Bae 3IN1 Serum Foundation - Warm Cashew',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d4.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/diwali/d4.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        NY Bae 3IN1 Serum Foundation - Warm Cashew 03 (30 ml) | Infused
+                                                        with Primer | Moisturising I Glowing Korean Skin I Celeb Glow |
+                                                        Dewy Makeup | Evens Skin Tone | Ultra Glow
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'd4',
+                                                        title: 'NY Bae 3IN1 Serum Foundation - Warm Cashew',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/diwali/d4.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'd5',
+                                            title: 'Maybelline New York Fit Me 16Hr Oil Control Compact',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d5.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/diwali/d5.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Maybelline New York Fit Me 16Hr Oil Control Compact, 128 Warm
+                                                        Nude, 6g
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'd5',
+                                                        title: 'Maybelline New York Fit Me 16Hr Oil Control Compact',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/diwali/d5.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--featured Section -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <div class="section-container">
+                    <div class="text-view">
+                        <h2 class="m-0 mb-2">FEATURED</h2>
+                        <p class="m-0 p-0 view-all"><a href="./addToCart.html">View All</a></p>
+                    </div>
+                    <div class="row service-row">
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'f1',
+                                            title: 'L\'Oreal Professionnel Xtenso Care Sulfate',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/featured/f1.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/featured/f1.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        L'Oreal Professionnel Xtenso Care Sulfate-free Shampoo|For all
+                                                        hair types|Gently cleanses, controls frizz and adds shine|With
+                                                        Keratin Repair (250ml)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'f1',
+                                                        title: 'L\'Oreal Professionnel Xtenso Care Sulfate',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/featured/f1.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'f2',
+                                            title: 'Sunsilk Stunning Black Shine Shampoo, 650 ml',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/featured/f2.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/featured/f2.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Sunsilk Stunning Black Shine Shampoo, 650 ml
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'f2',
+                                                        title: 'Sunsilk Stunning Black Shine Shampoo, 650 ml',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/featured/f2.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'f3',
+                                            title: 'Tresemme Keratin Smooth Conditioner (190 ml)',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/featured/f3.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/featured/f3.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Tresemme Keratin Smooth Conditioner (190 ml)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'f3',
+                                                        title: 'Tresemme Keratin Smooth Conditioner (190 ml)',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/featured/f3.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'f4',
+                                            title: 'Pond\'s Natural Glow Face Powder| Pink Glow |30G',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/featured/f4.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/featured/f4.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Pond's Natural Glow Face Powder| Pink Glow |30G
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'f4',
+                                                        title: 'Pond\'s Natural Glow Face Powder| Pink Glow |30G',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/featured/f4.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 'f5',
+                                            title: 'L\'Oreal Professionnel Xtenso Care Sulfate-Free',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/featured/f5.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/featured/f5.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        L'Oreal Professionnel Xtenso Care Sulfate-Free Masque For
+                                                        Frizz-Free, Shiny & Manageable Hair 196gms
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 'f5',
+                                                        title: 'L\'Oreal Professionnel Xtenso Care Sulfate-Free',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/featured/f5.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Intro Section -->
+        <section id="intro ">
+            <div id="poster-img" class="intro-imgs px-3">
+                <img src="./img/offers/off1.jpg" alt="">
+            </div>
+            </div><!-- #intro -->
+        </section>
+
+        <!--featured Section -->
+        <section id="featured" class="featured">
+            <div class="container">
+                <div class="section-container">
+                    <div class="text-view">
+                        <h2 class="m-0 mb-2">SAVINGS SENSATIONAL SETS</h2>
+                        <p class="m-0 p-0 view-all"><a href="./addToCart.html">View All</a></p>
+                    </div>
+                    <div class="row service-row">
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 's1',
+                                            title: 'Alps Goodness Hair Growth Expert Kit (Pack of 2)',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/savings/s1.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/savings/s1.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Alps Goodness Hair Growth Expert Kit (Pack of 2) with Rosemary
+                                                        Water Spray (100 ml) & Rosemary Water Refill (305 ml) | Hair
+                                                        Regrowth | Viral Rinse | Easy to use
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 's1',
+                                                        title: 'Alps Goodness Hair Growth Expert Kit (Pack of 2)',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/savings/s1.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 's2',
+                                            title: 'Faces Canada Rose Glow Kit | Rose Gold Strobe',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/savings/s2.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/savings/s2.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Faces Canada Rose Glow Kit | Rose Gold Strobe Cream (30ml) + All
+                                                        Day Hydra Matte Foundation Rose Ivory (25ml) | Combo
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 's2',
+                                                        title: 'Faces Canada Rose Glow Kit | Rose Gold Strobe',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/savings/s2.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 's3',
+                                            title: 'Good Vibes De-tan Ubtan Light Day and Night',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/savings/s3.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/savings/s3.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Good Vibes De-tan Ubtan Light Day and Night Cream Combo: Protect
+                                                        and Nourish Your Skin (50 gm)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 's3',
+                                                        title: 'Good Vibes De-tan Ubtan Light Day and Night',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/savings/s3.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 's4',
+                                            title: 'Alps Goodness Anti Hairfall Combo I Hair',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/savings/s4.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/savings/s4.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Alps Goodness Anti Hairfall Combo I Hair Growth Heros I Shampoo
+                                                        (290 ml) & Conditioner (200 ml) Combo I Anti Hairfall Kit For
+                                                        Men & Women
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 's4',
+                                                        title: 'Alps Goodness Anti Hairfall Combo I Hair',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/savings/s4.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="ser-wid">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="relative">
+                                        <a href="#!" onclick="addToWishlist({
+                                            id: 's5',
+                                            title: 'Good Vibes Saffron Day Cream and Ubtan De-tan',
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/savings/s5.jpg'
+                                        })"><i class="bi bi-heart"></i></a>
+                                    </div>
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/offers/savings/s5.jpg" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <div class="description-flex">
+                                                <div class="description m-0 price">
+                                                    <p class="description-content m-0 p-0 pt-2">
+                                                        Good Vibes Saffron Day Cream and Ubtan De-tan Night Cream Combo
+                                                        (Set of 2) - Good Vibes De-Tan Glow Night Cream Ubtan with Power
+                                                        of Serum (50g) + Good Vibes Saffron Nourishing Day Cream (50g)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section">
+                                                <div class="price-hotel pl-2">
+                                                    ₹ 598<span class="discount">81% off</span>
+                                                </div>
+                                            </div>
+                                            <div class="btn-section p-0 adding-section">
+                                                <div class="price-hotel">
+                                                    <button onclick="addToCart({
+                                                        id: 's5',
+                                                        title: 'Good Vibes Saffron Day Cream and Ubtan De-tan',
+                                                        price: 598,
+                                                        discount: 81,
+                                                        image: './img/offers/savings/s5.jpg'
+                                                    })">Add to Cart</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cart-section Section -->
+        <section id="cart-section p-0">
+            <div class="container">
+                <div class="section-container p-0">
+                    <div class="text-view ">
+                        <h2 class="m-0 mb-2 newlancer">OFFER <br><span class="oftheDay"> of the Day</span></h2>
+                    </div>
+                </div>
+                <div class="swiper mySwipersrs elitePadd">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e2.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e4.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e5.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e6.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e7.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e8.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#!">
+                                <div class="box box-absolute">
+                                    <div class="box-cart">
+                                        <div class="img">
+                                            <img src="./img/elite/e9.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="footer" class="footer dark-background">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row row-foot gy-4">
+                    <div class="col-lg-2 col-md-3 footer-about">
+                        <a href="index.html" class="logo d-flex align-items-center">
+                            <img src="img/logo.png" alt="" title="" />
+                            <span class="sitename">MusTafa</span>
+                        </a>
+                        <div class="footer-contact pt-3">
+                            <p>A108 Salt Lake</p>
+                            <p>West Bangal, India</p>
+                        </div>
+                        <div class="footer-contact pt-3">
+                            <p>
+                                Welcome to Mustafa – your one-stop shop for quality products. Explore a wide range of
+                                items tailored to meet your needs, with secure checkout and fast delivery.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links cng-foot">
+                        <h4>Our Services</h4>
+                        <ul>
+                            <li><a href="#!">Brands</a></li>
+                            <li><a href="./offer.html">Offers</a></li>
+                            <li><a href="./newLanch.html">New</a></li>
+                            <li><a href="#!">Splurge</a></li>
+                            <li><a href="#!">Magazine</a></li>
+                            <li><a href="./elite.html">Elite Offers</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 footer-links cng-foot">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#!">Term & Condition</a></li>
+                            <li><a href="#!">Privacy Policy</a></li>
+                            <li><a href="#!">Return and Cancellation Policy</a></li>
+                            <li><a href="#!">Contact Info</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-map footer-links">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.3523126546!2d88.26495117488783!3d22.535406374621722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1725439736979!5m2!1sen!2sin"
+                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright text-center px-3">
+            <div
+                class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+                <div class="d-flex flex-column align-items-center align-items-lg-start">
+                    <div>
+                        © Copyright <strong><span>MusTafa</span></strong>. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 8,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+        var swiper = new Swiper(".mySwipers", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+
+        var swiper = new Swiper(".mySwipersrs", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                },
+                "@0.37": {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                },
+                "@0.87": {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                },
+                "@1.33": {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+                "@1.50": {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+            },
+        });
+
+        // Function to add a product to the wishlist
+        function addToWishlist(product) {
+            // Get existing wishlist data or initialize an empty array
+            let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+            // Check if the product already exists in the wishlist
+            const existingIndex = wishlist.findIndex(item => item.id === product.id);
+
+            if (existingIndex > -1) {
+                alert('Product is already in your Wishlist!');
+            } else {
+                // If the product does not exist, add it to the wishlist
+                wishlist.push(product);
+                localStorage.setItem('wishlist', JSON.stringify(wishlist));
+                alert('Product added to Wishlist successfully!');
+            }
+        }
+
+        function addToCart(product) {
+            // Get existing cart data or initialize an empty array
+            let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+            // Check if the product already exists in the cart
+            const existingIndex = cart.findIndex(item => item.id === product.id);
+
+            if (existingIndex > -1) {
+                // If the product exists, increment its quantity
+                cart[existingIndex].quantity += 1;
+            } else {
+                // If the product does not exist, add it with a quantity of 1
+                product.quantity = 1;
+                cart.push(product);
+            }
+
+            // Save the updated cart to localStorage
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert('Product added to cart successfully!');
+        }
+        
+    </script>
+
+</body>
+
+</html>

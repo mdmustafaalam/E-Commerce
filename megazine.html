@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <!-- Favicons -->
+  <link href="img/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="./css/styles.css?v=5" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet File -->
+  <link href="./css/style.css?v=1" rel="stylesheet">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+  <title>E-Commerce</title>
+</head>
+
+<body id="body">
+  <button type="button" class="mobile-nav-toggle" onclick="toggleMobileNav()"><i class="fa fa-bars"></i></button>
+  <main id="main">
+
+    <header id="header" class="header-cng">
+      <div class="container">
+        <div id="logo" class="pull-left">
+          <h1>
+            <a href="./"><img src="img/logo.png" alt="" title="" /></a>
+            <a href="./">NProduct</a>
+          </h1>
+        </div>
+
+        <nav id="nav-menu-container" class="navbar">
+          <ul class="nav-menu menu-size">
+            <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+            <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+            <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+            <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+            <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+          </ul>
+        </nav>
+
+        <nav id="mobile-nav-menu-container" class="mobile-navbar navbar">
+          <ul class="nav-menu nav-items">
+            <div id="logo" class="pull-left">
+              <h1 class="modalH justify-content-start">
+                <a href="./">NProduct</a>
+              </h1>
+            </div>
+            <li class="nav-item menu-active"><a href="./" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="./offer.html" class="nav-link">Offers </a></li>
+            <li class="nav-item"><a href="./newLanch.html" class="nav-link">New</a></li>
+            <li class="nav-item"><a href="./splurge.html" class="nav-link">Splurge</a></li>
+            <li class="nav-item"><a href="./megazine.html" class="nav-link">Megazine</a></li>
+            <li class="nav-item"><a href="./elite.html" class="nav-link">Elite Offers</a></li>
+            <li class="lg"><a href="#!">Login</a></li>
+          </ul>
+        </nav>
+
+        <nav id="nav-menu-container" class="navbar">
+          <ul class="nav-menu">
+            <li class="button-cng mr-2" data-toggle="modal" data-target="#exampleModal"><a href="#!"><i
+                  class="bi bi-search"></i></a>
+            </li>
+            <li class="button-cng mr-2"><a href="./wishlist.html"><i class="bi bi-heart"></i></i></a>
+            </li>
+            <li class="button-cng mr-2"><a href="./cartAdd.html"><i class="bi bi-cart-check"></i></a>
+            </li>
+            <li class="dropdown button-cng"><a href="#!"><i class="bi bi-emoji-smile"></i></a>
+          </ul>
+        </nav>
+        <!-- #nav-menu-container -->
+      </div>
+    </header>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Search Here</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="row">
+              <div class="form-group col-12 pl-2">
+                <label for="search">Search for Product & Brands</label>
+                <input type="search" class="form-control" id="search" name="search" placeholder="Search Here" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-search"><a href="#!">Search</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Intro Section -->
+    <section id="intro">
+      <div id="intro-img" class="intro-imgs">
+        <img class="aspecCn" src="./img/magazin/mb.jpg" alt="">
+      </div>
+      </div><!-- #intro -->
+    </section>
+
+    <!-- cart-section Section -->
+    <section id="cart-section">
+      <div class="container">
+        <div class="section-container">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">TODAY'S BEST DEAL <br><span class="oftheDay"> for You</span></h2>
+          </div>
+        </div>
+        <div class="swiper mySwipersrs elitePadd">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m1.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            NY Bae PRO Strobe Cream - Pink Topaz (12g) | Primer + Highlighter + Moisturizer | Dewy
+                            Makeup | Glowing Korean Skin | Best Suited For Normal To Dry Skin
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            DERMDOC by Purplle UVA & UVB Broad Spectrum Sun Protection Gel Cream with SPF 30 & PA+++ (50
+                            gm) I Sunblock | Sun Damage | Sunscreen for Dry Skin | Water & Sweat Resistant | Sunscreen
+                            SPF 30 | Tan Removal Cream
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m3.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            DERMDOC by Purplle 2% Salicylic Acid Face Serum (15ml) | Serum for Acne and Pimples | Face
+                            Serum for Glowing Skin | Face Serum for Oily Acne Prone Skin | Serum for Acne Scars | Acne
+                            Serum | Face Serum for Oily Skin
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m4.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            FACES CANADA Weightless Stay Matte Finish Compact Powder - Natural 02, 9 gm | SPF 20 | Non
+                            Oily Matte Look | Evens Out Complexion | Prevents Acne | Blends Effortlessly | Pressed
+                            Powder For All Skin Types
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m5.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            The Derma Co. 2% Kojic Acid Face Serum with 1% Alpha Arbutin & Niacinamide For Dark Spots &
+                            Pigmentation - 30 ml
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m6.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            The Derma Co. 1% Hyaluronic Sunscreen Aqua Gel with SPF 50 & PA++++ for Broad Spectrum &
+                            Blue Light Protection 50g
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m7.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            The Derma Co. 2% Salicylic Acid Face Serum with Witch Hazel & Willow Bark For Active Acne -
+                            30 ml
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/m8.jpg" alt="">
+                    </div>
+                    <div class="text">
+                      <div class="description-flex">
+                        <div class="description m-0 price">
+                          <p class="description-content m-0 p-0 pt-2">
+                            NY Bae Runway Radiance Compact Powder - Fair Beige 02 (9g) | Fair Skin Tone | Mattifies Skin
+                            | Blurs Pores | Oil-Control | Long-wear Creaseless Makeup | Loose Powder
+                          </p>
+                        </div>
+                      </div>
+                      <div class="btn-section">
+                        <div class="price-hotel pl-2">
+                          ₹ 598<span class="discount">81% off</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--saler Section -->
+    <section id="saler" class="saler">
+      <div class="container">
+        <div class="section-container pb-0">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">OUR LATEST'S <br><span class="oftheDay"> Highlight</span></h2>
+          </div>
+          <div class="row service-row">
+            <div class="ser-wid">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <img src="./img/magazin/s1.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="ser-wid">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <img src="./img/magazin/s2.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="ser-wid">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <img src="./img/magazin/s3.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="ser-wid">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <img src="./img/magazin/s4.jpg" alt="">
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cart-section Section -->
+    <section id="cart-section" class="pt-0 pb-0">
+      <div class="container">
+        <div class="section-container pt-0">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">Skin's</h2>
+          </div>
+        </div>
+        <div class="swiper mySwipersrsR elitePadd">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s5.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s8.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s9.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cart-section Section -->
+    <section id="cart-section" class="pt-0 pb-0">
+      <div class="container">
+        <div class="section-container pt-0">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">Makeup's</h2>
+          </div>
+        </div>
+        <div class="swiper mySwipersrsS elitePadd">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u8.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u5.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/u1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cart-section Section -->
+    <section id="cart-section" class="pt-0 pb-0">
+      <div class="container">
+        <div class="section-container pt-0">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">Hair's</h2>
+          </div>
+        </div>
+        <div class="swiper mySwipersrsT elitePadd">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h8.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h5.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/h2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/s2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cart-section Section -->
+    <section id="cart-section" class="pt-0 pb-0">
+      <div class="container">
+        <div class="section-container pt-0">
+          <div class="text-view ">
+            <h2 class="m-0 mb-2 newlancer">Bodycare's</h2>
+          </div>
+        </div>
+        <div class="swiper mySwipersrsU elitePadd">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b4.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b5.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b7.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b2.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b8.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#!">
+                <div class="box">
+                  <div class="box-cart">
+                    <div class="img">
+                      <img src="./img/magazin/b3.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer dark-background">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row row-foot gy-4">
+          <div class="col-lg-2 col-md-3 footer-about">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <img src="img/logo.png" alt="" title="" />
+              <span class="sitename">MusTafa</span>
+            </a>
+            <div class="footer-contact pt-3">
+              <p>A108 Salt Lake</p>
+              <p>West Bangal, India</p>
+            </div>
+            <div class="footer-contact pt-3">
+              <p>
+                Welcome to Mustafa – your one-stop shop for quality products. Explore a wide range of
+                items tailored to meet your needs, with secure checkout and fast delivery.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links cng-foot">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#!">Brands</a></li>
+              <li><a href="./offer.html">Offers</a></li>
+              <li><a href="./newLanch.html">New</a></li>
+              <li><a href="#!">Splurge</a></li>
+              <li><a href="#!">Magazine</a></li>
+              <li><a href="./elite.html">Elite Offers</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links cng-foot">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#!">Term & Condition</a></li>
+              <li><a href="#!">Privacy Policy</a></li>
+              <li><a href="#!">Return and Cancellation Policy</a></li>
+              <li><a href="#!">Contact Info</a></li>
+            </ul>
+          </div>
+          <div class="footer-map footer-links">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117925.3523126546!2d88.26495117488783!3d22.535406374621722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f882db4908f667%3A0x43e330e68f6c2cbc!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1725439736979!5m2!1sen!2sin"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-center px-3">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div>
+            © Copyright <strong><span>MusTafa</span></strong>. All Rights Reserved
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    // Function to add item to cart
+    function addToCart(product) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push(product);
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert("Product added to cart!");
+    }
+
+    var swiper = new Swiper(".mySwipersrsR, .mySwipersrsS, .mySwipersrsT, .mySwipersrsU", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        "@0.37": {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        "@0.87": {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        "@1.33": {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        "@1.50": {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      },
+    });
+
+    var swiper = new Swiper(".mySwipersrs", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        "@0.37": {
+          slidesPerView: 2,
+          spaceBetween: 5,
+        },
+        "@0.87": {
+          slidesPerView: 3,
+          spaceBetween: 5,
+        },
+        "@1.33": {
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        "@1.50": {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      },
+    });
+
+  </script>
+
+</body>
+
+</html>
