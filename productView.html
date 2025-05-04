@@ -129,42 +129,32 @@
                             <div class="carousel-item active">
                                 <img src="./img/items/item1.jpg" class="d-block w-100" alt="Product Image">
                             </div>
-                            <div class="carousel-item">
-                                <img src="./img/items/item2.jpg" class="d-block w-100" alt="Product Image">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./img/items/item3.jpg" class="d-block w-100" alt="Product Image">
-                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
                             data-bs-slide="prev">
-                            <a href="#!"><a href="#!"><i class="bi bi-heart"></i></i></a></a>
+                            <a href="#!"><i class="fa-solid fa-less-than"></i></a>
                         </button>
                         <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
                             data-bs-slide="next">
-                            <a href="#!"><a href="#!"><i class="bi bi-heart"></i></i></a></a>
+                            <a href="#!"><i class="fa-solid fa-greater-than"></i></a>
                         </button>
                     </div>
                 </div>
 
                 <!-- Right Section: Product Details -->
                 <div class="col-md-6">
-                    <h5 class="product-title">Soundcore by Anker Motion Q 16 W Bluetooth Speaker (Black, Stereo Channel)
-                    </h5>
-                    <p class="mb-1"><strong> Seller: </strong> MPDSLERetail <span class="badge bg-info text-white">
+                    <h5 class="product-main-title"></h5>
+                    <p class="mb-1 product-seller"><strong> Seller:</strong> <span class="badge bg-info text-white">
                             Assured</span></p>
                     <div class="d-flex align-items-center">
-                        <div class="price-hotel">
-                            ₹ 598<span class="discount">81% off</span>
+                        <div class="price-hotel"><span class="discount"></span>
                         </div>
                     </div>
 
                     <div class="mt-4">
-                        <h5 class="product-title m-0">Available Offers</h5>
-                        <ul class="pl-3">
-                            <li><strong>Partner Offer:</strong> Buy this & get up to ₹500 off on Furniture</li>
-                            <li><strong>Bank Offer:</strong> 5% Unlimited Cashback on Flipkart Axis Bank Credit Card
-                            </li>
+                        <h5 class="product-offer m-0">Available Offers</h5>
+                        <ul class="pl-3 product-offer-list">
+                            <!-- Offers will be filled by JS -->
                         </ul>
                     </div>
 
@@ -175,7 +165,7 @@
 
                     <!-- Pincode Check -->
                     <div class="mt-4">
-                        <h3 class="product-order">Delivery by 17 Oct, Thursday</h3>
+                        <h3 class="product-order"></h3>
                         <div class="input-group pin-check">
                             <input type="text" class="form-control" placeholder="Enter Pincode" id="pincodeInput">
                             <button class="btn btn-outline-secondary" type="button" onclick="checkPincode()">Check
@@ -195,7 +185,7 @@
                     <div class="col-lg-2 col-md-3 footer-about">
                         <a href="index.html" class="logo d-flex align-items-center">
                             <img src="img/logo.png" alt="" title="" />
-                            <span class="sitename">MusTafa</span>
+                            <span class="sitename">NProduct</span>
                         </a>
                         <div class="footer-contact pt-3">
                             <p>A108 Salt Lake</p>
@@ -258,7 +248,7 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <script>
-        
+
         // Pincode Checker
         function checkPincode() {
             const validPincodes = ['735210', '110001', '400001'];
@@ -273,8 +263,58 @@
                 result.style.color = 'red';
             }
         }
+
+
     </script>
-    
+
+    <script>
+        window.onload = function () {
+            const product = JSON.parse(localStorage.getItem('selectedProduct'));
+            if (!product) return;
+
+            // Update image
+            document.querySelector('.carousel-item img').src = product.image;
+            document.querySelector('.carousel-item img').alt = product.title;
+
+
+            // Update title
+            const title = document.querySelector('.product-main-title');
+            if (title) {
+                title.textContent = product.title;
+            }
+
+            // Update seller
+            const seller = document.querySelector('.product-seller');
+            if (seller) {
+                seller.innerHTML = `<strong>Seller:</strong> ${product.seller} <span class="badge bg-info text-white">Assured</span>`;
+            }
+
+            // Update price
+            const priceEl = document.querySelector('.price-hotel');
+            if (priceEl) {
+                priceEl.innerHTML = `₹ ${product.price} <span class="discount">${product.discount}% off</span>`;
+            }
+
+            // Delivery
+            const deliveryEl = document.querySelector('.product-order');
+            if (deliveryEl && product.delivery) {
+                deliveryEl.textContent = product.delivery;
+            }
+
+            // Update offers
+            const offerList = document.querySelector('.product-offer-list');
+            if (offerList && product.offers) {
+                offerList.innerHTML = `
+            <li><strong>Partner Offer:</strong> ${product.offers.partner}</li>
+            <li><strong>Bank Offer:</strong> ${product.offers.bank}</li>`;
+            }
+
+        };
+    </script>
+
+
+
+
 </body>
 
 </html>

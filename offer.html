@@ -182,7 +182,7 @@
             </div>
         </div>
 
-        <!--featured Section -->
+        <!--DIWALI BLOCKBUSTER Section -->
         <section id="featured" class="featured">
             <div class="container">
                 <div class="section-container">
@@ -192,51 +192,64 @@
                     </div>
                     <div class="row service-row">
                         <div class="ser-wid">
-                            <a href="#!">
-                                <div class="box box-absolute">
-                                    <div class="relative">
-                                        <a href="#!" onclick="addToWishlist({
+                            <div class="box box-absolute">
+                                <div class="relative">
+                                    <a href="#!" onclick="addToWishlist({
                                             id: 'd1',
                                             title: 'Pond\'s Bright Beauty Anti-Spot Serum Cream with',
                                             price: 598,
                                             discount: 81,
                                             image: './img/offers/diwali/d1.jpg'
                                         })"><i class="bi bi-heart"></i></a>
+                                </div>
+                                <div class="box-cart">
+                                    <div class="img">
+                                        <a href="javascript:void(0);" onclick="viewProduct({
+                                            id: 'd1',
+                                            title: `Pond's Bright Beauty Anti-Spot Serum Cream with Niacinamide and SPF 15 PA++ |Fades Dark Spots |Boosts Glow and Enhances Skin Radiance | 35g`,
+                                            price: 598,
+                                            discount: 81,
+                                            image: './img/offers/diwali/d5.jpg',
+                                            seller: 'Rahul',
+                                            delivery: 'Delivery by 18 Oct, Thursday',
+                                            offers: {
+                                                    partner: 'Buy this & get up to ₹500 off on Furniture',
+                                                    bank: '5% Unlimited Cashback on Flipkart Axis Bank Credit Card'
+                                                }
+                                        })">
+                                            <img src="./img/offers/diwali/d1.jpg" alt="Product Image">
+                                        </a>
                                     </div>
-                                    <div class="box-cart">
-                                        <div class="img">
-                                            <img src="./img/offers/diwali/d1.jpg" alt="">
+                                    <div class="text">
+                                        <div class="description-flex">
+                                            <div class="description m-0 price">
+                                                <p class="description-content m-0 p-0 pt-2">
+                                                    Pond's Bright Beauty Anti-Spot Serum Cream with Niacinamide
+                                                    and
+                                                    SPF 15 PA++ |Fades Dark Spots |Boosts Glow and Enhances Skin
+                                                    Radiance | 35G
+                                                </p>
+                                            </div>
                                         </div>
-                                        <div class="text">
-                                            <div class="description-flex">
-                                                <div class="description m-0 price">
-                                                    <p class="description-content m-0 p-0 pt-2">
-                                                        Pond's Bright Beauty Anti-Spot Serum Cream with Niacinamide and
-                                                        SPF 15 PA++ |Fades Dark Spots |Boosts Glow and Enhances Skin
-                                                        Radiance | 35G
-                                                    </p>
-                                                </div>
+                                        <div class="btn-section">
+                                            <div class="price-hotel pl-2">
+                                                ₹ 598<span class="discount">81% off</span>
                                             </div>
-                                            <div class="btn-section">
-                                                <div class="price-hotel pl-2">
-                                                    ₹ 598<span class="discount">81% off</span>
-                                                </div>
-                                            </div>
-                                            <div class="btn-section p-0 adding-section">
-                                                <div class="price-hotel">
-                                                    <button onclick="addToCart({
+                                        </div>
+                                        <div class="btn-section p-0 adding-section">
+                                            <div class="price-hotel">
+                                                <button onclick="addToCart({
                                                         id: 'd1',
                                                         title: 'Pond\'s Bright Beauty Anti-Spot Serum',
                                                         price: 598,
                                                         discount: 81,
                                                         image: './img/offers/diwali/d1.jpg'
                                                     })">Add to Cart</button>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                            </div>
                         </div>
                         <div class="ser-wid">
                             <a href="#!">
@@ -1038,7 +1051,7 @@
                     <div class="col-lg-2 col-md-3 footer-about">
                         <a href="index.html" class="logo d-flex align-items-center">
                             <img src="img/logo.png" alt="" title="" />
-                            <span class="sitename">MusTafa</span>
+                            <span class="sitename">NProduct</span>
                         </a>
                         <div class="footer-contact pt-3">
                             <p>A108 Salt Lake</p>
@@ -1220,8 +1233,17 @@
             localStorage.setItem('cart', JSON.stringify(cart));
             alert('Product added to cart successfully!');
         }
-        
+
     </script>
+
+    <script>
+        function viewProduct(product) {
+            localStorage.setItem('selectedProduct', JSON.stringify(product));
+            window.location.href = 'productView.html';
+        }
+    </script>
+
+
 
 </body>
 

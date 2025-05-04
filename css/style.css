@@ -1501,7 +1501,8 @@ h4.title {
   width: 140px;
   height: auto;
 }
-.product-title {
+.product-main-title,
+.product-offer {
   font-size: 1.3rem;
   font-weight: 700;
 }
@@ -1685,6 +1686,7 @@ input[type="text"] {
 
 .product-row {
   width: 100%;
+  padding: 0 30px !important;
 }
 
 .newlancer {
