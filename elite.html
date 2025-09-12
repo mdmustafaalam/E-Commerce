@@ -995,6 +995,7 @@
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
@@ -1091,7 +1092,31 @@
       // Save the updated cart to localStorage
       localStorage.setItem('cart', JSON.stringify(cart));
       alert('Product added to cart successfully!');
+
     }
+
+      function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobile-nav-menu-container');
+      mobileNav.classList.toggle('active');
+    }
+
+    let scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
 
   </script>
 

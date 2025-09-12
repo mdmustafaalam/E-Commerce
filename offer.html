@@ -1109,9 +1109,9 @@
 
     </footer>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-            class="bi bi-arrow-up-short"></i></a>
+      <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -1241,6 +1241,30 @@
             localStorage.setItem('selectedProduct', JSON.stringify(product));
             window.location.href = 'productView.html';
         }
+
+        function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobile-nav-menu-container');
+      mobileNav.classList.toggle('active');
+    }
+
+    let scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+
     </script>
 
 

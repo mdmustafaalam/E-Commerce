@@ -960,6 +960,29 @@
       alert('Product added to cart successfully!');
     }
 
+    function toggleMobileNav() {
+      const mobileNav = document.getElementById('mobile-nav-menu-container');
+      mobileNav.classList.toggle('active');
+    }
+
+    let scrollTop = document.querySelector('.scroll-top');
+
+    function toggleScrollTop() {
+      if (scrollTop) {
+        window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
+      }
+    }
+    scrollTop.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+
+    window.addEventListener('load', toggleScrollTop);
+    document.addEventListener('scroll', toggleScrollTop);
+
   </script>
 
 </body>

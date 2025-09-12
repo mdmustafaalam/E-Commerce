@@ -66,9 +66,12 @@ h6 {
 
 .mobile-nav-toggle {
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   cursor: pointer;
-  background: none;
+  background: white;
+  width: 45px;
+  height: 44px;
+  border-radius: 6px;
   border: none;
   color: #424242;
   top: 7px;
